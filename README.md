@@ -153,9 +153,9 @@ interceptPoint = targetPosition + targetVelocity * time
 interceptHeading = | interceptPoint - turretPosition |
 ```
 
-The resulting intercept heading is the normalized vector from the turretPosition to the interceptPoint.
+The resulting interceptHeading is the unit vector from the turretPosition towards the interceptPoint.
 
-Multiply `interceptPoint` by turret projectile speed and you're good to go!
+Multiply `interceptHeading` by turret projectile speed and you're good to go!
 
 ## Gameplay Considerations
 
