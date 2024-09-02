@@ -1,10 +1,18 @@
 # Predictive Aim Using Maths
 
-From video:
+From YouTube video: [Predictive Aim in Unity](https://www.youtube.com/watch?v=2zVwug_agr0)
 
-https://www.youtube.com/watch?v=2zVwug_agr0
+Demo: https://editor.p5js.org/townofdon/sketches/SKwR4wEsD
 
-This uses the [Law of Cosines](https://en.wikipedia.org/wiki/Law_of_cosines) as well as the [Quadratic Formula](https://en.wikipedia.org/wiki/Quadratic_formula) to calculate a 100% accurate predictive aim solution for AI bots.
+## Problem
+
+A non-trivial problem in game-dev is having compelling enemies who react to the player's actions. One way to make the enemy feel "smarter" is to grant it the ability to predictively aim.
+
+There are [lots of ways](https://youtu.be/Z6qBeuN-H1M?si=BnqsTfkygwPBptV-) to solve this problem. One method uses the [Law of Cosines](https://en.wikipedia.org/wiki/Law_of_cosines) as well as the [Quadratic Formula](https://en.wikipedia.org/wiki/Quadratic_formula) to calculate a 100% accurate predictive aim solution for AI bots.
+
+One "gotcha" of this approach is that the calculation will return a null result if no solution exists. This may, however, be a feature rather than a bug. If no intercept solution is found, the AI could continue to fire at the previous intercept solution, fire directly at the target's current position, or decide not to fire at all.
+
+## Definition of Terms
 
 Given the following triangle:
 
