@@ -6,7 +6,7 @@ Demo: https://editor.p5js.org/townofdon/sketches/SKwR4wEsD
 
 ## Problem
 
-A non-trivial problem in game-dev is having compelling enemies who react to the player's actions. One way to make the enemy feel "smarter" is to grant it the ability to predictively aim.
+A common goal of game-dev is to create compelling enemies who react to the player's actions. One way to make the enemy feel "smarter" is to grant it the ability to predictively aim.
 
 There are [lots of ways](https://youtu.be/Z6qBeuN-H1M?si=BnqsTfkygwPBptV-) to solve this problem. One method uses the [Law of Cosines](https://en.wikipedia.org/wiki/Law_of_cosines) as well as the [Quadratic Formula](https://en.wikipedia.org/wiki/Quadratic_formula) to calculate a 100% accurate predictive aim solution for AI bots.
 
